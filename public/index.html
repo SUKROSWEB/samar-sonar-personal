@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samar Sonar</title>
+  <meta name="description" content="Samar Sonar - Official website" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Samar Sonar</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Samar Sonar</h1>
+      <p class="tagline">Welcome to the official site.</p>
+      <a href="#contact" class="btn">Get in touch</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>Write a short introduction about Samar Sonar here. You can describe who you are, what you do, and what makes you different.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Service One</h3>
+          <p>Short description of the first service you offer.</p>
+        </div>
+        <div class="card">
+          <h3>Service Two</h3>
+          <p>Short description of the second service you offer.</p>
+        </div>
+        <div class="card">
+          <h3>Service Three</h3>
+          <p>Short description of the third service you offer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@samarsonar.com">hello@samarsonar.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Samar Sonar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
