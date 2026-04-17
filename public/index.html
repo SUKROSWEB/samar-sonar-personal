@@ -5,532 +5,1422 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samar Sonar | Tourism Website Developer, Google Business SEO & AI Automation</title>
   <meta name="description" content="Samar Sonar helps hotels, homestays, tourism brands, and local businesses grow online with modern websites, Google Business optimization, tourism marketing, and AI automation. 12+ years, 150+ clients across India." />
-  <meta name="keywords" content="tourism website developer, homestay website India, Google Business Profile SEO, hotel website developer, local SEO India, Northeast India digital agency, Arunachal Pradesh web design, AI automation India" />
+  <meta name="keywords" content="tourism website developer, homestay website, Google Business Profile SEO India, hotel website developer, local SEO India, Northeast India digital agency" />
   <meta name="author" content="Samar Sonar" />
+  <meta name="theme-color" content="#0B1120" />
   <link rel="canonical" href="https://samarsonar.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Samar Sonar — Websites, Google Maps SEO & AI Automation" />
-  <meta property="og:description" content="Helping Hotels, Homestays & Local Businesses Grow Online — websites, GBP SEO, tourism marketing & AI automation." />
-  <meta property="og:url" content="https://samarsonar.com" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samarsonar.com/" />
+  <meta property="og:title" content="Samar Sonar | Tourism Website Developer, Google Business SEO & AI Automation" />
+  <meta property="og:description" content="Helping Hotels, Homestays & Local Businesses Grow Online — modern websites, Google Business SEO, tourism marketing, and AI automation." />
   <meta property="og:image" content="https://samarsonar.com/og-image.jpg" />
+  <meta property="og:site_name" content="Samar Sonar" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Samar Sonar — Tourism Digital Growth Partner" />
-  <meta name="twitter:description" content="Websites, Google Business SEO, Tourism Marketing & AI Automation for hotels & homestays." />
+  <meta name="twitter:title" content="Samar Sonar | Tourism Website Developer, Google Business SEO & AI Automation" />
+  <meta name="twitter:description" content="Helping Hotels, Homestays & Local Businesses Grow Online — modern websites, Google Business SEO, tourism marketing, and AI automation." />
+  <meta name="twitter:image" content="https://samarsonar.com/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2306B6D4'/%3E%3Cstop offset='1' stop-color='%233B82F6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-family='Inter, sans-serif' font-size='54' font-weight='700' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- JSON-LD Schema -->
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: {
+              primary: '#0B1120',
+              secondary: '#0F172A',
+              elevated: '#1E293B',
+            },
+            accent: {
+              cyan: '#06B6D4',
+              blue: '#3B82F6',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 0 40px rgba(6, 182, 212, 0.25)',
+            'glow-lg': '0 10px 60px rgba(6, 182, 212, 0.35)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Samar Sonar",
-    "image": "https://samarsonar.com/og-image.jpg",
-    "url": "https://samarsonar.com",
-    "telephone": "+91-7085499570",
-    "description": "Websites, Google Business Profile SEO, Tourism Marketing & AI Automation for hotels, homestays and local businesses in India.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dirang",
-      "addressRegion": "Arunachal Pradesh",
-      "addressCountry": "IN"
-    },
-    "areaServed": "India",
-    "sameAs": ["https://samar.online"],
-    "priceRange": "₹₹"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://samarsonar.com/#person",
+        "name": "Samar Sonar",
+        "url": "https://samarsonar.com",
+        "sameAs": ["https://samar.online"],
+        "jobTitle": "Digital Growth Partner",
+        "telephone": "+917085499570",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dirang",
+          "addressRegion": "Arunachal Pradesh",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://samarsonar.com/#business",
+        "name": "Samar Sonar — Digital Growth Partner",
+        "description": "Website development, Google Business Profile SEO, tourism marketing, and AI automation for hotels, homestays, and local businesses across India.",
+        "url": "https://samarsonar.com",
+        "telephone": "+917085499570",
+        "priceRange": "₹₹",
+        "areaServed": { "@type": "Country", "name": "India" },
+        "founder": { "@id": "https://samarsonar.com/#person" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+917085499570",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dirang",
+          "addressRegion": "Arunachal Pradesh",
+          "addressCountry": "IN"
+        },
+        "sameAs": ["https://samar.online"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Business Profile SEO" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tourism Marketing" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation" } }
+          ]
+        }
+      }
+    ]
   }
   </script>
+
+  <style>
+    :root {
+      --bg-primary: #0B1120;
+      --bg-secondary: #0F172A;
+      --bg-elevated: #1E293B;
+      --border: rgba(148, 163, 184, 0.12);
+      --border-bright: rgba(148, 163, 184, 0.22);
+      --text-primary: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent-cyan: #06B6D4;
+      --accent-blue: #3B82F6;
+      --accent-gradient: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%);
+      --glow: 0 0 40px rgba(6, 182, 212, 0.25);
+    }
+
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+    .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; letter-spacing: -0.02em; }
+
+    .hero-h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+    .section-h2 { font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+
+    .gradient-text {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .glass {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      position: relative;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+    .card::before {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, transparent 30%);
+      pointer-events: none;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-bright);
+      box-shadow: var(--glow);
+    }
+
+    .btn-primary {
+      background: var(--accent-gradient);
+      color: white;
+      padding: 0.875rem 1.75rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-primary:hover { transform: scale(1.03); box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4); }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      padding: 0.875rem 1.75rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.4); }
+
+    .icon-badge {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: var(--accent-gradient);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: white;
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.3);
+    }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.375rem 0.875rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .pulse-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    .floating { animation: float 4s ease-in-out infinite; }
+    .floating-delay { animation: float 4s ease-in-out infinite; animation-delay: 1.2s; }
+
+    .radial-cyan {
+      position: absolute; pointer-events: none; z-index: 0;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 60%);
+    }
+    .radial-blue {
+      position: absolute; pointer-events: none; z-index: 0;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+    }
+
+    .grid-bg {
+      position: absolute; inset: 0; pointer-events: none; z-index: 0;
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    .nav-scrolled {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(11, 17, 32, 0.7);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .gradient-border {
+      position: relative;
+      background: var(--bg-secondary);
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: var(--accent-gradient);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details[open] .faq-plus { transform: rotate(45deg); }
+    .faq-plus { transition: transform 0.2s ease; }
+
+    .portfolio-slider {
+      position: relative;
+    }
+
+    .portfolio-track {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 0.25rem 0 0.75rem;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      overscroll-behavior-x: contain;
+      scrollbar-width: none;
+    }
+
+    .portfolio-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .portfolio-slide {
+      flex: 0 0 calc(100% - 0.5rem);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    .slider-btn {
+      width: 46px;
+      height: 46px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .slider-btn:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.24);
+      transform: translateY(-1px);
+    }
+
+    .slider-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    @media (min-width: 640px) {
+      .portfolio-slide {
+        flex-basis: calc(78% - 0.5rem);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .portfolio-slide {
+        flex-basis: calc(50% - 0.5rem);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .portfolio-slide {
+        flex-basis: calc(33.333% - 0.75rem);
+      }
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-cyan);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--bg-elevated); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+      .floating, .floating-delay { animation: none; }
+    }
+  </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 md:px-6 py-4" aria-label="Primary">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="font-display text-xl md:text-2xl font-bold gradient-text">Samar Sonar</span>
+        <span class="hidden md:inline text-slate-600">/</span>
+        <span class="hidden md:inline text-sm text-slate-400">Digital Growth Partner</span>
+      </a>
 
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a href="#" class="brand">
-        <span class="brand-mark">S</span>
-        <span class="brand-name">Samar Sonar</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gbp-work">GBP Work</a></li>
-        <li><a href="#websites">Websites</a></li>
-        <li><a href="#packages">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="hidden lg:flex items-center gap-8 text-sm text-slate-300">
+        <li><a href="#about" class="hover:text-white transition">About</a></li>
+        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+        <li><a href="#work" class="hover:text-white transition">Work</a></li>
+        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
       </ul>
-      <a class="btn btn-whatsapp" href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.05 0C5.5 0 .22 5.28.22 11.82c0 2.08.55 4.11 1.6 5.9L0 24l6.43-1.69a11.77 11.77 0 0 0 5.62 1.43h.01c6.54 0 11.82-5.28 11.82-11.82 0-3.16-1.23-6.13-3.36-8.44zM12.06 21.7h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.81 1 1.02-3.71-.24-.38a9.85 9.85 0 0 1-1.52-5.2c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.85 9.85 0 0 1 2.9 6.99c0 5.45-4.44 9.87-9.84 9.87zm5.41-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15s-.76.96-.94 1.16c-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.36.2 1.88.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
-        WhatsApp
-      </a>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="hidden sm:inline-flex btn-primary text-sm" style="padding:0.625rem 1.25rem;">
+          <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i>
+          <span>WhatsApp Now</span>
+        </a>
+        <button id="menuToggle" class="lg:hidden p-2 text-white" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i data-lucide="menu" class="w-6 h-6" aria-hidden="true"></i>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="badge-live"><span class="live-dot"></span>Available for new projects</span>
-        <h1>Helping Hotels, Homestays & Local Businesses <span class="grad">Grow Online.</span></h1>
-        <p class="chips">Websites · Google Business SEO · Tourism Marketing · AI Automation</p>
-        <p class="lead">I build modern websites, improve Google visibility, and create smart digital systems that help businesses get more leads, more trust, and more bookings.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp Now →</a>
-          <a class="btn btn-ghost" href="#websites">View My Work</a>
-        </div>
-        <div class="trust-points">
-          <span><strong>50+</strong> Tourism Projects</span>
-          <span class="sep">·</span>
-          <span><strong>20+</strong> Websites Built</span>
-          <span class="sep">·</span>
-          <span><strong>40+</strong> GBP Optimized</span>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="mini-card floating-1">
-          <div class="mini-card-top">
-            <span class="mini-dot"></span>
-            <span class="mini-label">+127% inquiries</span>
-          </div>
-          <div class="mini-bars">
-            <span style="height:30%"></span>
-            <span style="height:55%"></span>
-            <span style="height:42%"></span>
-            <span style="height:78%"></span>
-            <span style="height:90%"></span>
-          </div>
-        </div>
-        <div class="gbp-card">
-          <div class="gbp-avatar">HS</div>
-          <div class="gbp-info">
-            <strong>Homestay Client</strong>
-            <div class="gbp-stars">★★★★★ <span>4.9 · 67 reviews</span></div>
-            <span class="gbp-cat">Homestay · Dirang</span>
-          </div>
-          <div class="gbp-rank">Ranks #1 on Google Maps</div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 z-40 hidden flex-col bg-bg-primary/95 backdrop-blur-xl px-6 pt-24 pb-10 lg:hidden">
+    <ul class="flex flex-col gap-6 text-2xl font-display">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="btn-primary mt-10 self-start text-base">
+      <i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i>
+      WhatsApp Now
+    </a>
+  </div>
 
-  <!-- TRUST / STATS BAND -->
-  <section class="trust-band">
-    <div class="container trust-grid">
-      <div class="trust-stat">
-        <div class="trust-icon">📂</div>
-        <strong>50+</strong>
-        <span>Tourism & Local Business Projects</span>
-      </div>
-      <div class="trust-stat">
-        <div class="trust-icon">🌐</div>
-        <strong>20+</strong>
-        <span>Live Websites Delivered</span>
-      </div>
-      <div class="trust-stat">
-        <div class="trust-icon">📍</div>
-        <strong>40+</strong>
-        <span>Google Business Profiles Optimized</span>
-      </div>
-      <div class="trust-stat">
-        <div class="trust-icon">⏳</div>
-        <strong>12+</strong>
-        <span>Years of Digital Experience</span>
-      </div>
-    </div>
-  </section>
+  <main id="top">
+    <!-- HERO -->
+    <section class="relative pt-32 md:pt-40 pb-20 md:pb-28 overflow-hidden">
+      <div class="grid-bg"></div>
+      <div class="radial-cyan" style="width:700px;height:700px;top:-200px;right:-150px;"></div>
+      <div class="radial-blue" style="width:500px;height:500px;bottom:-150px;left:-100px;"></div>
 
-  <!-- PROBLEM / SOLUTION -->
-  <section class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">The gap most businesses face</span>
-        <h2>Great business. Invisible online.</h2>
+      <div class="max-w-6xl mx-auto px-5 md:px-6 relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="fade-up">
+          <span class="pill mb-6">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>🇮🇳 Available for new projects</span>
+          </span>
+          <h1 class="hero-h1 font-display mb-4">Samar Sonar</h1>
+          <p class="text-2xl md:text-3xl font-display font-semibold mb-5 gradient-text leading-tight">
+            Helping Hotels, Homestays &amp; Local Businesses Grow Online
+          </p>
+          <p class="text-sm md:text-base text-slate-400 mb-6 flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>Websites</span><span class="text-slate-600">•</span>
+            <span>Google Business SEO</span><span class="text-slate-600">•</span>
+            <span>Tourism Marketing</span><span class="text-slate-600">•</span>
+            <span>AI Automation</span>
+          </p>
+          <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed max-w-xl">
+            I build modern websites, improve Google visibility, and create smart digital systems that help businesses get more leads, more trust, and more bookings.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mb-8">
+            <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="btn-primary">
+              <i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i>
+              WhatsApp Now
+            </a>
+            <a href="#work" class="btn-secondary">
+              View My Work
+              <i data-lucide="arrow-right" class="w-5 h-5" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-400">
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>50+ Projects</span>
+            <span class="text-slate-700">•</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>20+ Websites Built</span>
+            <span class="text-slate-700">•</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>GBP SEO Specialist</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="relative h-[420px] md:h-[480px] fade-up">
+          <div class="absolute inset-0 rounded-3xl" style="background: radial-gradient(circle at center, rgba(6,182,212,0.25) 0%, transparent 70%); filter: blur(40px);"></div>
+
+          <!-- GBP Card -->
+          <div class="glass rounded-2xl p-5 absolute bottom-8 left-0 right-8 md:right-12 floating shadow-glow-lg">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #0ea5e9, #8b5cf6);">
+                <i data-lucide="home" class="w-7 h-7 text-white" aria-hidden="true"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5" aria-hidden="true"></i>
+                  <span>Google Business Profile</span>
+                </div>
+                <h3 class="font-semibold text-white truncate">Tara Devi Homestay</h3>
+                <div class="flex items-center gap-2 mt-1">
+                  <div class="flex text-amber-400 text-sm">★★★★★</div>
+                  <span class="text-sm text-slate-300 font-medium">4.9</span>
+                  <span class="text-xs text-slate-500">(128 reviews)</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-2">Homestay · Dirang, Arunachal Pradesh</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-white/10 text-center">
+              <div>
+                <div class="text-base font-semibold text-white">2.3k</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-wider">Views</div>
+              </div>
+              <div>
+                <div class="text-base font-semibold text-white">184</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-wider">Calls</div>
+              </div>
+              <div>
+                <div class="text-base font-semibold text-accent-cyan">#1</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-wider">Ranking</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card -->
+          <div class="glass rounded-2xl p-5 absolute top-0 right-0 w-56 floating-delay shadow-glow">
+            <div class="flex items-center gap-2 text-xs text-slate-400 mb-2">
+              <i data-lucide="trending-up" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>
+              <span>Last 30 days</span>
+            </div>
+            <div class="text-3xl font-bold gradient-text font-display">+127%</div>
+            <div class="text-sm text-slate-300 mt-1">Inquiries</div>
+            <div class="mt-3 flex items-end gap-1 h-10">
+              <div class="flex-1 rounded-sm" style="height: 30%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 50%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 40%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 70%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 60%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 90%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+              <div class="flex-1 rounded-sm" style="height: 100%; background: linear-gradient(180deg, #06B6D4, #3B82F6);"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ps-grid">
-        <div class="ps-card ps-problem">
-          <h3>The Problem</h3>
-          <ul>
-            <li>Low Google visibility — customers can't find you</li>
-            <li>Outdated or no website — losing trust before contact</li>
-            <li>Weak online brand presence</li>
-            <li>Few direct bookings and inquiries</li>
-            <li>No clear digital strategy</li>
-            <li>Poor local SEO ranking</li>
+    </section>
+
+    <!-- TRUST / STATS -->
+    <section class="py-16 md:py-20 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div class="card p-6 md:p-7 text-center fade-up">
+            <div class="icon-badge mb-4 mx-auto"><i data-lucide="briefcase" class="w-5 h-5" aria-hidden="true"></i></div>
+            <div class="text-3xl md:text-4xl font-bold gradient-text font-display stat-num" data-target="50">0</div>
+            <div class="text-sm text-slate-400 mt-2">Tourism &amp; Local Business Projects</div>
+          </div>
+          <div class="card p-6 md:p-7 text-center fade-up">
+            <div class="icon-badge mb-4 mx-auto"><i data-lucide="globe" class="w-5 h-5" aria-hidden="true"></i></div>
+            <div class="text-3xl md:text-4xl font-bold gradient-text font-display stat-num" data-target="20">0</div>
+            <div class="text-sm text-slate-400 mt-2">Live Websites Delivered</div>
+          </div>
+          <div class="card p-6 md:p-7 text-center fade-up">
+            <div class="icon-badge mb-4 mx-auto"><i data-lucide="map-pin" class="w-5 h-5" aria-hidden="true"></i></div>
+            <div class="text-3xl md:text-4xl font-bold gradient-text font-display stat-num" data-target="40">0</div>
+            <div class="text-sm text-slate-400 mt-2">Google Business Profiles Optimized</div>
+          </div>
+          <div class="card p-6 md:p-7 text-center fade-up">
+            <div class="icon-badge mb-4 mx-auto"><i data-lucide="award" class="w-5 h-5" aria-hidden="true"></i></div>
+            <div class="text-3xl md:text-4xl font-bold gradient-text font-display stat-num" data-target="12">0</div>
+            <div class="text-sm text-slate-400 mt-2">Years of Digital Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION -->
+    <section class="py-20 md:py-28 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <h2 class="section-h2 font-display mb-4">Stuck in a digital blind spot?</h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">Most tourism businesses lose bookings before a customer even reaches out. Here's what changes when you fix the digital foundation.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div class="card p-7 md:p-9 fade-up">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(239, 68, 68, 0.12); color: #ef4444;">
+                <i data-lucide="alert-triangle" class="w-5 h-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-xl md:text-2xl font-display font-semibold">The Problem</h3>
+            </div>
+            <ul class="space-y-4 text-slate-300">
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>Low Google visibility — customers can't find you</span></li>
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>Outdated or no website — losing trust instantly</span></li>
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>Weak online brand presence</span></li>
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>Few direct bookings or inquiries</span></li>
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>No clear digital strategy</span></li>
+              <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color:#ef4444;" aria-hidden="true"></i><span>Poor local SEO ranking</span></li>
+            </ul>
+          </div>
+          <div class="card p-7 md:p-9 fade-up">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(6, 182, 212, 0.12); color: #06B6D4;">
+                <i data-lucide="sparkles" class="w-5 h-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-xl md:text-2xl font-display font-semibold">The Solution</h3>
+            </div>
+            <ul class="space-y-4 text-slate-300">
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Modern, mobile-first website that converts</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Google Business Profile optimized for local ranking</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Tourism-focused branding that builds trust</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Practical AI automation to save time</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Clear, measurable digital strategy</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-cyan" aria-hidden="true"></i><span>Direct WhatsApp communication — no agency runaround</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 md:py-28 relative scroll-mt-28 md:scroll-mt-32">
+      <div class="radial-cyan" style="width:500px;height:500px;top:0;left:50%;transform:translateX(-50%);"></div>
+      <div class="max-w-3xl mx-auto px-5 md:px-6 text-center relative z-10 fade-up">
+        <span class="pill mb-5 mx-auto">About</span>
+        <h2 class="section-h2 font-display mb-6">Built for <span class="gradient-text">tourism</span>. Built for results.</h2>
+        <p class="text-slate-400 text-lg leading-relaxed mb-5">
+          Samar Sonar helps homestays, hotels, and local businesses build a stronger digital presence through websites, Google Business Profile SEO, tourism-focused marketing, and AI-powered automation.
+        </p>
+        <p class="text-slate-400 text-lg leading-relaxed mb-10">
+          With 12+ years serving 150+ clients across Northeast India — from Dirang homestays to Tawang hotels — the focus is simple: <span class="text-white font-medium">better visibility, more inquiries, more bookings, stronger trust online.</span>
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="pill"><i data-lucide="plane" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>Tourism Niche Expert</span>
+          <span class="pill"><i data-lucide="map-pin" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>Local SEO Specialist</span>
+          <span class="pill"><i data-lucide="sparkles" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>AI Integration</span>
+          <span class="pill"><i data-lucide="message-circle" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>Direct Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 md:py-28 relative scroll-mt-28 md:scroll-mt-32">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <span class="pill mb-4">Services</span>
+          <h2 class="section-h2 font-display mb-4">Everything you need to <span class="gradient-text">grow online</span></h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">Four focused services designed for tourism and local businesses — done end-to-end by one person.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+          <article class="card p-7 md:p-8 fade-up">
+            <div class="icon-badge mb-5"><i data-lucide="globe" class="w-6 h-6" aria-hidden="true"></i></div>
+            <h3 class="text-xl font-display font-semibold mb-3">Website Development</h3>
+            <p class="text-slate-400 leading-relaxed mb-5">Modern, mobile-friendly websites for tourism businesses, hotels, homestays, and local brands — designed to look professional and generate leads.</p>
+            <a href="#contact" class="text-sm text-accent-cyan font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          </article>
+          <article class="card p-7 md:p-8 fade-up">
+            <div class="icon-badge mb-5"><i data-lucide="map-pin" class="w-6 h-6" aria-hidden="true"></i></div>
+            <h3 class="text-xl font-display font-semibold mb-3">Google Business Profile SEO</h3>
+            <p class="text-slate-400 leading-relaxed mb-5">Google Maps &amp; local search optimization to help your business rank higher and attract more local customers.</p>
+            <a href="#contact" class="text-sm text-accent-cyan font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          </article>
+          <article class="card p-7 md:p-8 fade-up">
+            <div class="icon-badge mb-5"><i data-lucide="plane" class="w-6 h-6" aria-hidden="true"></i></div>
+            <h3 class="text-xl font-display font-semibold mb-3">Tourism Marketing</h3>
+            <p class="text-slate-400 leading-relaxed mb-5">Digital growth support for homestays, hotels, and tourism brands — branding, online presence, and booking optimization.</p>
+            <a href="#contact" class="text-sm text-accent-cyan font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          </article>
+          <article class="card p-7 md:p-8 fade-up">
+            <div class="icon-badge mb-5"><i data-lucide="sparkles" class="w-6 h-6" aria-hidden="true"></i></div>
+            <h3 class="text-xl font-display font-semibold mb-3">AI Automation</h3>
+            <p class="text-slate-400 leading-relaxed mb-5">Practical AI systems — chatbots, auto-replies, content workflows — that save time and simplify customer handling.</p>
+            <a href="#contact" class="text-sm text-accent-cyan font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="py-20 md:py-28 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <span class="pill mb-4">Process</span>
+          <h2 class="section-h2 font-display mb-4">What Happens After You Message Me</h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">A simple, direct workflow from first chat to launch. No layers, no confusion, no long agency loops.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="card p-6 fade-up">
+            <div class="flex items-center justify-between mb-5">
+              <span class="pill">Step 1</span>
+              <div class="icon-badge" style="width:42px;height:42px;"><i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i></div>
+            </div>
+            <h3 class="text-lg font-display font-semibold mb-2">Quick Discovery Chat</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">You share your business, goals, and current problems. I suggest the most practical starting point.</p>
+          </article>
+
+          <article class="card p-6 fade-up">
+            <div class="flex items-center justify-between mb-5">
+              <span class="pill">Step 2</span>
+              <div class="icon-badge" style="width:42px;height:42px;"><i data-lucide="briefcase" class="w-5 h-5" aria-hidden="true"></i></div>
+            </div>
+            <h3 class="text-lg font-display font-semibold mb-2">Plan &amp; Structure</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">We lock the right pages, offer, and call-to-action flow so the website or SEO work is built around conversion.</p>
+          </article>
+
+          <article class="card p-6 fade-up">
+            <div class="flex items-center justify-between mb-5">
+              <span class="pill">Step 3</span>
+              <div class="icon-badge" style="width:42px;height:42px;"><i data-lucide="sparkles" class="w-5 h-5" aria-hidden="true"></i></div>
+            </div>
+            <h3 class="text-lg font-display font-semibold mb-2">Build &amp; Refine</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">I build, optimize, and fine-tune the experience with direct feedback from you instead of passing messages through a team.</p>
+          </article>
+
+          <article class="card p-6 fade-up">
+            <div class="flex items-center justify-between mb-5">
+              <span class="pill">Step 4</span>
+              <div class="icon-badge" style="width:42px;height:42px;"><i data-lucide="trending-up" class="w-5 h-5" aria-hidden="true"></i></div>
+            </div>
+            <h3 class="text-lg font-display font-semibold mb-2">Launch &amp; Support</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Once live, you get a clean handoff, launch support, and a clear next step for growth, rankings, or inquiries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GBP PORTFOLIO -->
+    <section id="work" class="py-20 md:py-28 relative scroll-mt-28 md:scroll-mt-32">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-14 fade-up">
+          <div class="text-center lg:text-left max-w-2xl">
+            <span class="pill mb-4">Portfolio</span>
+            <h2 class="section-h2 font-display mb-4">Google Business Profile Portfolio</h2>
+            <p class="text-slate-400">20+ tourism &amp; hospitality businesses ranking on Google Maps.</p>
+          </div>
+          <div class="flex items-center gap-3 justify-center lg:justify-end">
+            <span class="text-xs uppercase tracking-[0.2em] text-slate-500 hidden sm:inline">Slide</span>
+            <button id="gbpPrev" class="slider-btn" type="button" aria-label="Previous Google Business portfolio items">
+              <i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+            <button id="gbpNext" class="slider-btn" type="button" aria-label="Next Google Business portfolio items">
+              <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="portfolio-slider fade-up" aria-label="Google Business Profile portfolio slider">
+          <div id="gbpGrid" class="portfolio-track" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEBSITE PORTFOLIO -->
+    <section class="py-20 md:py-28 relative">
+      <div class="radial-blue" style="width:600px;height:600px;top:10%;right:-200px;"></div>
+      <div class="max-w-6xl mx-auto px-5 md:px-6 relative z-10">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-14 fade-up">
+          <div class="text-center lg:text-left max-w-2xl">
+            <span class="pill mb-4">Websites</span>
+            <h2 class="section-h2 font-display mb-4">Website Portfolio</h2>
+            <p class="text-slate-400">Live websites built and maintained for real businesses.</p>
+          </div>
+          <div class="flex items-center gap-3 justify-center lg:justify-end">
+            <span class="text-xs uppercase tracking-[0.2em] text-slate-500 hidden sm:inline">Slide</span>
+            <button id="webPrev" class="slider-btn" type="button" aria-label="Previous website portfolio items">
+              <i data-lucide="arrow-left" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+            <button id="webNext" class="slider-btn" type="button" aria-label="Next website portfolio items">
+              <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="portfolio-slider fade-up" aria-label="Website portfolio slider">
+          <div id="webGrid" class="portfolio-track" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS / BENEFITS -->
+    <section class="py-20 md:py-28 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <span class="pill mb-4">Outcomes</span>
+          <h2 class="section-h2 font-display mb-4">What Clients Actually Get</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">📈</div>
+            <h3 class="font-semibold text-lg mb-2">More Google Visibility</h3>
+            <p class="text-slate-400 text-sm">Rank higher on Maps &amp; local search.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">📞</div>
+            <h3 class="font-semibold text-lg mb-2">More Direct Inquiries</h3>
+            <p class="text-slate-400 text-sm">WhatsApp &amp; call leads, not third-party commissions.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">⭐</div>
+            <h3 class="font-semibold text-lg mb-2">Stronger Customer Trust</h3>
+            <p class="text-slate-400 text-sm">Professional brand that looks established.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">🛏️</div>
+            <h3 class="font-semibold text-lg mb-2">More Bookings</h3>
+            <p class="text-slate-400 text-sm">Both direct and OTA-driven conversions.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">🎨</div>
+            <h3 class="font-semibold text-lg mb-2">Premium Online Brand</h3>
+            <p class="text-slate-400 text-sm">Modern design that matches your standards.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">⚡</div>
+            <h3 class="font-semibold text-lg mb-2">Time Saved</h3>
+            <p class="text-slate-400 text-sm">AI &amp; automation handling repetitive tasks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-20 md:py-28 relative scroll-mt-28 md:scroll-mt-32">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <span class="pill mb-4">Pricing</span>
+          <h2 class="section-h2 font-display mb-4">Simple, transparent <span class="gradient-text">pricing</span></h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">Pick a package, or request a custom quote. Everything starts with a direct WhatsApp chat.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5 md:gap-6 items-stretch">
+          <!-- Starter -->
+          <div class="card p-7 md:p-8 flex flex-col fade-up">
+            <h3 class="text-xl font-display font-semibold mb-1">Starter Website</h3>
+            <p class="text-sm text-slate-400 mb-5">Perfect for new homestays &amp; small businesses</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold font-display">₹6,000</span>
+              <span class="text-slate-400">+</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300 mb-8 flex-1">
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>3–5 page responsive website</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Mobile optimized</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Contact &amp; WhatsApp integration</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>1 month support</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Basic SEO setup</li>
+            </ul>
+            <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Starter%20Website%20package." target="_blank" rel="noopener" class="btn-secondary w-full justify-center">
+              <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i>
+              Get Started
+            </a>
+          </div>
+
+          <!-- Business (Popular) -->
+          <div class="card gradient-border p-7 md:p-8 flex flex-col relative lg:scale-[1.03] fade-up" style="border: 1px solid transparent;">
+            <span class="absolute -top-3 right-6 btn-primary text-xs" style="padding: 0.25rem 0.875rem;">
+              <i data-lucide="star" class="w-3.5 h-3.5" aria-hidden="true"></i>
+              Most Popular
+            </span>
+            <h3 class="text-xl font-display font-semibold mb-1">Business Website</h3>
+            <p class="text-sm text-slate-400 mb-5">Most chosen by growing tourism businesses</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold font-display gradient-text">₹12,000</span>
+              <span class="text-slate-400">+</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300 mb-8 flex-1">
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>7–10 page premium website</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Booking inquiry form</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Gallery &amp; reviews section</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Google Business setup</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>On-page SEO</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>3 months support</li>
+            </ul>
+            <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Business%20Website%20package." target="_blank" rel="noopener" class="btn-primary w-full justify-center">
+              <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i>
+              Get Business Plan
+            </a>
+          </div>
+
+          <!-- Premium -->
+          <div class="card p-7 md:p-8 flex flex-col fade-up">
+            <h3 class="text-xl font-display font-semibold mb-1">Premium Website + SEO</h3>
+            <p class="text-sm text-slate-400 mb-5">Full digital growth package</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold font-display">₹20,000</span>
+              <span class="text-slate-400">+</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300 mb-8 flex-1">
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Everything in Business</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Full local SEO optimization</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Google Business Profile setup &amp; ranking</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>Content strategy</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>AI chatbot (optional)</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-cyan flex-shrink-0" aria-hidden="true"></i>6 months support</li>
+            </ul>
+            <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Premium%20Website%20%2B%20SEO%20package." target="_blank" rel="noopener" class="btn-secondary w-full justify-center">
+              <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i>
+              Request Premium
+            </a>
+          </div>
+        </div>
+
+        <p class="text-center text-sm text-slate-500 mt-8">Prices are starting points. Final quote depends on scope. Custom packages available on request.</p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE ME -->
+    <section class="py-20 md:py-28 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="text-center mb-14 fade-up">
+          <span class="pill mb-4">Why Me</span>
+          <h2 class="section-h2 font-display mb-4">Why work with <span class="gradient-text">Samar Sonar</span>?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">🎯</div>
+            <h3 class="font-semibold text-lg mb-2">Tourism Niche Expertise</h3>
+            <p class="text-slate-400 text-sm">12+ years serving the hospitality industry.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">🔧</div>
+            <h3 class="font-semibold text-lg mb-2">Business-Focused Execution</h3>
+            <p class="text-slate-400 text-sm">Built for bookings, not just aesthetics.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">🎨</div>
+            <h3 class="font-semibold text-lg mb-2">Design + Local SEO Combined</h3>
+            <p class="text-slate-400 text-sm">Both sides done by one person.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">📍</div>
+            <h3 class="font-semibold text-lg mb-2">Google Business Authority</h3>
+            <p class="text-slate-400 text-sm">40+ profiles optimized &amp; ranking.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">💬</div>
+            <h3 class="font-semibold text-lg mb-2">Direct WhatsApp Communication</h3>
+            <p class="text-slate-400 text-sm">No account manager wall.</p>
+          </div>
+          <div class="card p-6 fade-up">
+            <div class="text-3xl mb-3" aria-hidden="true">⚡</div>
+            <h3 class="font-semibold text-lg mb-2">Simple, Result-Focused Workflow</h3>
+            <p class="text-slate-400 text-sm">Clear milestones, fast delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 md:py-28 relative">
+      <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-start">
+          <div class="fade-up">
+            <span class="pill mb-4">FAQ</span>
+            <h2 class="section-h2 font-display mb-4">Questions People Usually Ask Before Starting</h2>
+            <p class="text-slate-400 text-lg leading-relaxed">A quick answer to the most common concerns around timelines, content, support, and whether the work is a fit.</p>
+          </div>
+
+          <div class="space-y-4">
+            <details class="card p-6 fade-up group">
+              <summary class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-display font-semibold">Do you only work with tourism businesses?</h3>
+                  <p class="text-sm text-slate-500 mt-1">Short answer: tourism is the specialty, but not the limit.</p>
+                </div>
+                <i data-lucide="plus" class="faq-plus w-5 h-5 text-accent-cyan flex-shrink-0 mt-1" aria-hidden="true"></i>
+              </summary>
+              <p class="text-sm text-slate-400 leading-relaxed mt-4 pr-8">Tourism, hospitality, and local businesses are the strongest fit, especially where trust, local visibility, and direct inquiries matter.</p>
+            </details>
+
+            <details class="card p-6 fade-up group">
+              <summary class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-display font-semibold">How long does a website usually take?</h3>
+                  <p class="text-sm text-slate-500 mt-1">Most small projects move fast once content is ready.</p>
+                </div>
+                <i data-lucide="plus" class="faq-plus w-5 h-5 text-accent-cyan flex-shrink-0 mt-1" aria-hidden="true"></i>
+              </summary>
+              <p class="text-sm text-slate-400 leading-relaxed mt-4 pr-8">Timeline depends on scope, but a focused brochure-style website can usually move much faster than a larger SEO or booking-led build.</p>
+            </details>
+
+            <details class="card p-6 fade-up group">
+              <summary class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-display font-semibold">Can you help if I do not have content ready yet?</h3>
+                  <p class="text-sm text-slate-500 mt-1">Yes. You do not need everything figured out first.</p>
+                </div>
+                <i data-lucide="plus" class="faq-plus w-5 h-5 text-accent-cyan flex-shrink-0 mt-1" aria-hidden="true"></i>
+              </summary>
+              <p class="text-sm text-slate-400 leading-relaxed mt-4 pr-8">If photos, text, or offer details are still messy, I can help shape the structure and guide what is needed so the project does not stall.</p>
+            </details>
+
+            <details class="card p-6 fade-up group">
+              <summary class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-display font-semibold">Do you offer support after launch?</h3>
+                  <p class="text-sm text-slate-500 mt-1">Yes. Support is part of the delivery, not an afterthought.</p>
+                </div>
+                <i data-lucide="plus" class="faq-plus w-5 h-5 text-accent-cyan flex-shrink-0 mt-1" aria-hidden="true"></i>
+              </summary>
+              <p class="text-sm text-slate-400 leading-relaxed mt-4 pr-8">Each package includes a support window, and ongoing improvements can be planned separately if you want continued SEO, updates, or automation help.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 md:py-28 relative overflow-hidden scroll-mt-28 md:scroll-mt-32">
+      <div class="radial-cyan" style="width:700px;height:700px;top:-100px;left:-200px;"></div>
+      <div class="max-w-6xl mx-auto px-5 md:px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-14">
+          <div class="fade-up">
+            <span class="pill mb-4">Contact</span>
+            <h2 class="section-h2 font-display mb-4">Let's <span class="gradient-text">Grow</span> Your Business Online</h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-8">
+              Need a website, Google Business optimization, or digital growth support? Let's talk — response usually within 2 hours.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mb-10">
+              <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="btn-primary">
+                <i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i>
+                WhatsApp Now
+              </a>
+              <a href="tel:+917085499570" class="btn-secondary">
+                <i data-lucide="phone" class="w-5 h-5" aria-hidden="true"></i>
+                Call Now
+              </a>
+            </div>
+
+            <div class="card p-6 mb-6">
+              <ul class="space-y-4 text-sm">
+                <li class="flex items-start gap-3">
+                  <div class="icon-badge" style="width:36px;height:36px;border-radius:10px;"><i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">WhatsApp / Mobile</div>
+                    <a href="tel:+917085499570" class="text-white font-medium hover:text-accent-cyan">+91 7085499570</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="icon-badge" style="width:36px;height:36px;border-radius:10px;"><i data-lucide="globe" class="w-4 h-4" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Domain</div>
+                    <a href="https://samar.online" target="_blank" rel="noopener" class="text-white font-medium hover:text-accent-cyan">samar.online</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="icon-badge" style="width:36px;height:36px;border-radius:10px;"><i data-lucide="mail" class="w-4 h-4" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Email</div>
+                    <a href="mailto:hello@samarsonar.com" class="text-white font-medium hover:text-accent-cyan">hello@samarsonar.com</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="icon-badge" style="width:36px;height:36px;border-radius:10px;"><i data-lucide="map-pin" class="w-4 h-4" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Based In</div>
+                    <div class="text-white font-medium">Dirang, Arunachal Pradesh — serving all India</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="pill"><i data-lucide="zap" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>Replies in 2 hours</span>
+              <span class="pill"><i data-lucide="map-pin" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i>India-wide service</span>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form id="inquiryForm" class="glass rounded-2xl p-7 md:p-8 fade-up" novalidate>
+            <h3 class="text-xl font-display font-semibold mb-5">Send a quick inquiry</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="block">
+                <span class="text-sm text-slate-300 mb-1.5 block">Name <span class="text-red-400">*</span></span>
+                <input type="text" name="name" required class="w-full bg-black/30 border border-white/10 rounded-lg px-3.5 py-2.5 text-sm focus:border-accent-cyan focus:outline-none" placeholder="Your name" />
+              </label>
+              <label class="block">
+                <span class="text-sm text-slate-300 mb-1.5 block">Business Name <span class="text-red-400">*</span></span>
+                <input type="text" name="business" required class="w-full bg-black/30 border border-white/10 rounded-lg px-3.5 py-2.5 text-sm focus:border-accent-cyan focus:outline-none" placeholder="Your business" />
+              </label>
+            </div>
+            <label class="block mt-4">
+              <span class="text-sm text-slate-300 mb-1.5 block">Phone Number <span class="text-red-400">*</span></span>
+              <input type="tel" name="phone" required pattern="[0-9+\s\-]{10,15}" class="w-full bg-black/30 border border-white/10 rounded-lg px-3.5 py-2.5 text-sm focus:border-accent-cyan focus:outline-none" placeholder="+91 98765 43210" />
+            </label>
+            <label class="block mt-4">
+              <span class="text-sm text-slate-300 mb-1.5 block">Service Needed <span class="text-red-400">*</span></span>
+              <select name="service" required class="w-full bg-black/30 border border-white/10 rounded-lg px-3.5 py-2.5 text-sm focus:border-accent-cyan focus:outline-none">
+                <option value="">Select a service</option>
+                <option>Website Development</option>
+                <option>Google Business SEO</option>
+                <option>Tourism Marketing</option>
+                <option>AI Automation</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label class="block mt-4">
+              <span class="text-sm text-slate-300 mb-1.5 block">Message <span class="text-slate-500 text-xs">(optional)</span></span>
+              <textarea name="message" rows="4" class="w-full bg-black/30 border border-white/10 rounded-lg px-3.5 py-2.5 text-sm focus:border-accent-cyan focus:outline-none resize-none" placeholder="Tell me about your business or what you need..."></textarea>
+            </label>
+            <button type="submit" class="btn-primary w-full justify-center mt-6">
+              <i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i>
+              Send via WhatsApp
+            </button>
+            <p class="text-xs text-slate-500 text-center mt-3">Submitting opens WhatsApp with your message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/[0.08] pt-14 pb-8 mt-10">
+    <div class="max-w-6xl mx-auto px-5 md:px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <div class="font-display text-2xl font-bold gradient-text mb-3">Samar Sonar</div>
+          <p class="text-sm text-slate-400 leading-relaxed mb-3">AI Automation · Web Development · Google Business SEO · Tourism Marketing</p>
+          <p class="text-xs text-slate-500">Digital growth partner for tourism &amp; local businesses across India.</p>
+        </div>
+        <div>
+          <div class="text-sm uppercase tracking-wider text-slate-500 mb-4">Quick Links</div>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#services" class="hover:text-white">Services</a></li>
+            <li><a href="#work" class="hover:text-white">Work</a></li>
+            <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
           </ul>
         </div>
-        <div class="ps-card ps-solution">
-          <h3>The Solution</h3>
-          <ul>
-            <li>Modern, mobile-first website that converts</li>
-            <li>Google Business Profile optimized for local ranking</li>
-            <li>Tourism-focused branding that builds trust</li>
-            <li>Practical AI automation to save time</li>
-            <li>Clear, measurable digital strategy</li>
-            <li>Direct WhatsApp communication — no agency runaround</li>
+        <div>
+          <div class="text-sm uppercase tracking-wider text-slate-500 mb-4">Connect</div>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i><a href="tel:+917085499570" class="hover:text-white">+91 7085499570</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i><a href="mailto:hello@samarsonar.com" class="hover:text-white">hello@samarsonar.com</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-accent-cyan" aria-hidden="true"></i><a href="https://samar.online" target="_blank" rel="noopener" class="hover:text-white">samar.online</a></li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about-wrap">
-      <span class="eyebrow">About</span>
-      <h2>Built for tourism. Built for results.</h2>
-      <p class="lead">Samar Sonar helps homestays, hotels, and local businesses build a stronger digital presence through websites, Google Business Profile SEO, tourism-focused marketing, and AI-powered automation.</p>
-      <p class="lead">With 12+ years serving 150+ clients across Northeast India — from Dirang homestays to Tawang hotels — the focus is simple: <strong>better visibility, more inquiries, more bookings, stronger trust online.</strong></p>
-      <div class="about-badges">
-        <span>🎯 Tourism Niche Expert</span>
-        <span>📍 Local SEO Specialist</span>
-        <span>🤖 AI Integration</span>
-        <span>💬 Direct Communication</span>
+      <div class="pt-6 border-t border-white/[0.06] text-center text-xs text-slate-500">
+        © <span id="year"></span> Samar Sonar · Built with <span class="text-red-400">❤</span> in Dirang, Arunachal Pradesh
       </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">What I do</span>
-        <h2>Four services. One goal — more bookings.</h2>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">🌐</div>
-          <h3>Website Development</h3>
-          <p>Modern, mobile-friendly websites designed for tourism businesses, hotels, homestays, and local brands that want to look professional and generate more leads.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📍</div>
-          <h3>Google Business Profile SEO</h3>
-          <p>Optimization for Google Maps and local search visibility — rank better, attract more customers, drive more calls and direction requests.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🏔️</div>
-          <h3>Tourism Marketing</h3>
-          <p>Digital growth support for homestays, hotels, and tourism businesses — branding, content, online presence, and booking funnel optimization.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🤖</div>
-          <h3>AI Automation</h3>
-          <p>Practical AI systems and automation workflows — WhatsApp auto-replies, lead capture, review management — that save time and simplify operations.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GBP PORTFOLIO -->
-  <section id="gbp-work" class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Google Business Profile Portfolio</span>
-        <h2>20+ tourism & hospitality businesses ranking on Google Maps.</h2>
-      </div>
-      <div class="gbp-grid">
-        <a class="gbp-item" href="https://maps.app.goo.gl/DHg8QCSFb2HDjPe49" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Tara Devi Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://www.google.com/maps/place/Choeying's+Homestay/@27.3895044,92.1971688,430m/data=!3m1!1e3!4m20!1m10!3m9!1s0x375cbb00764be1c3:0x88e0edef1e43ad76!2sChoeying's+Homestay!5m2!4m1!1i2!8m2!3d27.3893996!4d92.1971849!16s%2Fg%2F11y8vvtn4v" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Choeying's Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/bf3uVit9d9ZJCvcf9" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Dolma Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/qvbu6k2qHdqWwMfd8" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Hotel Center Point</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/NttzJfcoB3R4R3Jb6" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Yangjom Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/5aoL4UjgwvWaazrJ9" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Mandala Abode Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/99D2Sbus2fQjaDU97" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Tenzin Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/QGe2EZgbouX3YEmr8" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Sangyal Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/hGXJewS98eddsS8c9" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Laks-D Stay N Resto</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/wMN5qEy5f12Z5Nms5" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Tanzing Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/gTWFYoL3ERiHdNRr7" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Thinley Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/sfrqygQojTDLsgxr7" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Yunsel Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/n4uRG5ocH3ez7sU97" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Regal Hotel</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/qaMeirk67qEc5jRd6" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Dorey Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/tbYWVjntso7u6t6a7" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Double D.D Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/r7aaQ1kd3qSAC2Tr8" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>J C Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/z1HkHjfsRgWxagU8A" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Namthung Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/8rTUTAmLXJTFMNLFA" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Lanjom Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://www.google.com/maps/place/Sangti+Tsomka+River+Campsite/@27.4057164,92.282104,17z" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Sangti Tsomka River Campsite</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-        <a class="gbp-item" href="https://maps.app.goo.gl/S8BwavneQTh9w3Vs6" target="_blank" rel="noopener"><span class="gbp-pin">📍</span><div><strong>Khasso Homestay</strong><span>Google Business · Optimized</span></div><span class="gbp-arrow">↗</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WEBSITE PORTFOLIO -->
-  <section id="websites" class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Website Portfolio</span>
-        <h2>Live websites built and maintained for real businesses.</h2>
-      </div>
-      <div class="web-grid">
-        <a class="web-card" href="https://merakparesort.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>merakparesort.in</code></div><div class="web-body"><strong>Merakpa Resort</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://www.tenzinnorahomestaydirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>tenzinnorahomestaydirang.online</code></div><div class="web-body"><strong>Tenzin Nora Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://www.tphomestaydirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>tphomestaydirang.online</code></div><div class="web-body"><strong>TP Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://tendolhomestaydirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>tendolhomestaydirang.online</code></div><div class="web-body"><strong>Tendol Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://www.rikyaretreattawang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>rikyaretreattawang.online</code></div><div class="web-body"><strong>Rikya Retreat Tawang</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://deedeehomestay.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>deedeehomestay.online</code></div><div class="web-body"><strong>Dee Dee Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://www.firongstay.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>firongstay.online</code></div><div class="web-body"><strong>Firong Stay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://tashitsepahomestay.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>tashitsepahomestay.online</code></div><div class="web-body"><strong>Tashi Tsepa Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://dewdropinndirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>dewdropinndirang.online</code></div><div class="web-body"><strong>Dewdrop Inn Dirang</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://riveroresortdirang.com/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>riveroresortdirang.com</code></div><div class="web-body"><strong>Rivero Resort Dirang</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://namfangsangtiriversidehomestay.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>namfangsangtiriversidehomestay.in</code></div><div class="web-body"><strong>Namfang Sangti Riverside</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://dolmahomestay.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>dolmahomestay.in</code></div><div class="web-body"><strong>Dolma Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://hotelcenterpointdirang.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>hotelcenterpointdirang.in</code></div><div class="web-body"><strong>Hotel Center Point</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://awoochopahomestaydirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>awoochopahomestaydirang.online</code></div><div class="web-body"><strong>Awoo Chopa Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://lotusinnjang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>lotusinnjang.online</code></div><div class="web-body"><strong>Lotus Inn Jang</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://hotelnestinndirang.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>hotelnestinndirang.in</code></div><div class="web-body"><strong>Hotel Nest Inn Dirang</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://dirangcozyhomecottage.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>dirangcozyhomecottage.online</code></div><div class="web-body"><strong>Dirang Cozy Home Cottage</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://www.thegreenrivulethomestay.in/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>thegreenrivulethomestay.in</code></div><div class="web-body"><strong>The Green Rivulet Homestay</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://sangtitsomkarivercamsite.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>sangtitsomkarivercamsite.online</code></div><div class="web-body"><strong>Sangti Tsomka River Campsite</strong><span>Website Design & Development</span></div></a>
-        <a class="web-card" href="https://daisyhomestaydirang.online/" target="_blank" rel="noopener"><div class="browser"><span></span><span></span><span></span><code>daisyhomestaydirang.online</code></div><div class="web-body"><strong>Daisy Homestay Dirang</strong><span>Website Design & Development</span></div></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS / BENEFITS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Results</span>
-        <h2>What clients actually get.</h2>
-      </div>
-      <div class="results-grid">
-        <div class="result-card"><div class="result-icon">📈</div><strong>More Google Visibility</strong><p>Rank higher on Maps & local search where customers are actually looking.</p></div>
-        <div class="result-card"><div class="result-icon">📞</div><strong>More Direct Inquiries</strong><p>WhatsApp & call leads straight to you — no third-party commissions.</p></div>
-        <div class="result-card"><div class="result-icon">⭐</div><strong>Stronger Customer Trust</strong><p>Professional brand that looks established the second someone lands.</p></div>
-        <div class="result-card"><div class="result-icon">🛏️</div><strong>More Bookings</strong><p>Both direct and OTA-driven conversions built into the experience.</p></div>
-        <div class="result-card"><div class="result-icon">🎨</div><strong>Premium Online Brand</strong><p>Modern design that matches the quality of what you offer in person.</p></div>
-        <div class="result-card"><div class="result-icon">⚡</div><strong>Time Saved</strong><p>AI & automation handling repetitive tasks — replies, reviews, leads.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PACKAGES -->
-  <section id="packages" class="section alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Pricing</span>
-        <h2>Transparent packages. No surprises.</h2>
-      </div>
-      <div class="pricing">
-        <div class="price-card">
-          <div class="price-head">
-            <h3>Starter Website</h3>
-            <p>Perfect for new homestays & small businesses.</p>
-          </div>
-          <div class="price">From <strong>₹6,000</strong></div>
-          <ul class="features">
-            <li>3–5 page responsive website</li>
-            <li>Mobile optimized</li>
-            <li>WhatsApp & call integration</li>
-            <li>Basic on-page SEO</li>
-            <li>1 month post-launch support</li>
-          </ul>
-          <a class="btn btn-ghost full" href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Starter%20Website%20package." target="_blank" rel="noopener">Enquire</a>
-        </div>
-
-        <div class="price-card featured">
-          <div class="tag">Most Popular</div>
-          <div class="price-head">
-            <h3>Business Website</h3>
-            <p>Most chosen by growing tourism businesses.</p>
-          </div>
-          <div class="price">From <strong>₹12,000</strong></div>
-          <ul class="features">
-            <li>7–10 page premium website</li>
-            <li>Booking inquiry form</li>
-            <li>Gallery & reviews section</li>
-            <li>Google Business setup</li>
-            <li>On-page SEO + speed tuning</li>
-            <li>3 months support</li>
-          </ul>
-          <a class="btn btn-primary full" href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Business%20Website%20package." target="_blank" rel="noopener">Enquire</a>
-        </div>
-
-        <div class="price-card">
-          <div class="price-head">
-            <h3>Premium Website + SEO</h3>
-            <p>Full digital growth package.</p>
-          </div>
-          <div class="price">From <strong>₹20,000</strong></div>
-          <ul class="features">
-            <li>Everything in Business</li>
-            <li>Full local SEO optimization</li>
-            <li>Google Business ranking work</li>
-            <li>Content strategy</li>
-            <li>AI chatbot (optional)</li>
-            <li>6 months support</li>
-          </ul>
-          <a class="btn btn-ghost full" href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%27m%20interested%20in%20the%20Premium%20Website%20%2B%20SEO%20package." target="_blank" rel="noopener">Enquire</a>
-        </div>
-      </div>
-      <p class="pricing-note">Prices are starting points. Final quote depends on scope. Custom packages available on request.</p>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE ME -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Why work with me</span>
-        <h2>Niche expertise. Direct communication. Real results.</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card"><div class="why-icon">🎯</div><strong>Tourism Niche Expertise</strong><p>12+ years serving the hospitality industry — I know what actually works for homestays & hotels.</p></div>
-        <div class="why-card"><div class="why-icon">🔧</div><strong>Business-Focused Execution</strong><p>Built for bookings and inquiries, not just for looks.</p></div>
-        <div class="why-card"><div class="why-icon">🎨</div><strong>Design + Local SEO Combined</strong><p>Both sides handled by one person — no coordination gaps.</p></div>
-        <div class="why-card"><div class="why-icon">📍</div><strong>Google Business Authority</strong><p>40+ profiles optimized & ranking across Northeast India.</p></div>
-        <div class="why-card"><div class="why-icon">💬</div><strong>Direct WhatsApp Communication</strong><p>No account manager wall. You talk to the person building your project.</p></div>
-        <div class="why-card"><div class="why-icon">⚡</div><strong>Simple, Result-Focused Workflow</strong><p>Clear milestones, fast delivery, no jargon.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section alt">
-    <div class="container contact-wrap">
-      <div class="contact-left">
-        <span class="eyebrow">Let's talk</span>
-        <h2>Let's Grow Your Business Online.</h2>
-        <p class="lead">Need a website, Google Business optimization, or digital growth support? Let's talk — response usually within 2 hours.</p>
-        <div class="contact-card">
-          <a class="contact-row" href="https://wa.me/917085499570" target="_blank" rel="noopener">
-            <span class="contact-icon">💬</span>
-            <div><strong>WhatsApp</strong><span>+91 70854 99570</span></div>
-          </a>
-          <a class="contact-row" href="tel:+917085499570">
-            <span class="contact-icon">📞</span>
-            <div><strong>Call Now</strong><span>+91 70854 99570</span></div>
-          </a>
-          <a class="contact-row" href="mailto:hello@samarsonar.com">
-            <span class="contact-icon">✉️</span>
-            <div><strong>Email</strong><span>hello@samarsonar.com</span></div>
-          </a>
-          <div class="contact-row static">
-            <span class="contact-icon">📍</span>
-            <div><strong>Based in</strong><span>Dirang, Arunachal Pradesh · Serving all India</span></div>
-          </div>
-        </div>
-        <div class="response-badges">
-          <span>⚡ Replies in 2 hours</span>
-          <span>🇮🇳 India-wide service</span>
-        </div>
-      </div>
-
-      <form id="inquiry-form" class="inquiry-form" onsubmit="return submitInquiry(event)">
-        <h3>Send an inquiry</h3>
-        <p class="muted form-sub">Fill this — it opens WhatsApp with your message pre-filled. No backend, no spam.</p>
-        <div class="form-row">
-          <label>Name *<input type="text" name="name" required placeholder="Your name" /></label>
-          <label>Business Name<input type="text" name="business" placeholder="e.g. Lanjom Homestay" /></label>
-        </div>
-        <div class="form-row">
-          <label>Phone Number *<input type="tel" name="phone" required pattern="[0-9+\s-]{7,}" placeholder="+91 ..." /></label>
-          <label>Service Needed *
-            <select name="service" required>
-              <option value="">Choose one</option>
-              <option>Website Development</option>
-              <option>Google Business SEO</option>
-              <option>Tourism Marketing</option>
-              <option>AI Automation</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-        </div>
-        <label>Message<textarea name="message" rows="4" placeholder="Tell me about your project or current website"></textarea></label>
-        <button type="submit" class="btn btn-primary full">Send via WhatsApp →</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand footer-brand">
-          <span class="brand-mark">S</span>
-          <span class="brand-name">Samar Sonar</span>
-        </div>
-        <p class="muted">AI Automation · Web Development · Google Business SEO · Tourism Marketing.</p>
-        <p class="muted">samar.online</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#websites">Work</a></li>
-          <li><a href="#packages">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="https://wa.me/917085499570" target="_blank" rel="noopener">WhatsApp: +91 70854 99570</a></li>
-          <li><a href="mailto:hello@samarsonar.com">hello@samarsonar.com</a></li>
-          <li><a href="https://samar.online" target="_blank" rel="noopener">samar.online</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Samar Sonar · Built with ❤️ in Dirang, Arunachal Pradesh</span>
-      <span class="muted">samarsonar.com</span>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a class="fab" href="https://wa.me/917085499570" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.78 11.78 0 0 0 12.05 0C5.5 0 .22 5.28.22 11.82c0 2.08.55 4.11 1.6 5.9L0 24l6.43-1.69a11.77 11.77 0 0 0 5.62 1.43h.01c6.54 0 11.82-5.28 11.82-11.82 0-3.16-1.23-6.13-3.36-8.44zM12.06 21.7h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.81 1 1.02-3.71-.24-.38a9.85 9.85 0 0 1-1.52-5.2c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.85 9.85 0 0 1 2.9 6.99c0 5.45-4.44 9.87-9.84 9.87zm5.41-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15s-.76.96-.94 1.16c-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.36.2 1.88.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+  <!-- Floating WhatsApp (mobile) -->
+  <a href="https://wa.me/917085499570?text=Hi%20Samar%2C%20I%20saw%20your%20website%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="WhatsApp Samar" class="fixed bottom-5 right-5 z-40 sm:hidden btn-primary shadow-glow-lg" style="padding:0.875rem;border-radius:9999px;">
+    <i data-lucide="message-circle" class="w-6 h-6" aria-hidden="true"></i>
   </a>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Data
+    const gbpList = [
+      ["Tara Devi Homestay", "https://maps.app.goo.gl/DHg8QCSFb2HDjPe49"],
+      ["Choeying's Homestay", "https://www.google.com/maps/search/Choeying+Homestay+Dirang"],
+      ["Dolma Homestay", "https://maps.app.goo.gl/bf3uVit9d9ZJCvcf9"],
+      ["Hotel Center Point", "https://maps.app.goo.gl/qvbu6k2qHdqWwMfd8"],
+      ["Yangjom Homestay", "https://maps.app.goo.gl/NttzJfcoB3R4R3Jb6"],
+      ["Mandala Abode Homestay", "https://maps.app.goo.gl/5aoL4UjgwvWaazrJ9"],
+      ["Tenzin Homestay", "https://maps.app.goo.gl/99D2Sbus2fQjaDU97"],
+      ["Sangyal Homestay", "https://maps.app.goo.gl/QGe2EZgbouX3YEmr8"],
+      ["Laks-D Stay N Resto", "https://maps.app.goo.gl/hGXJewS98eddsS8c9"],
+      ["Tanzing Homestay", "https://maps.app.goo.gl/wMN5qEy5f12Z5Nms5"],
+      ["Thinley Homestay", "https://maps.app.goo.gl/gTWFYoL3ERiHdNRr7"],
+      ["Yunsel Homestay", "https://maps.app.goo.gl/sfrqygQojTDLsgxr7"],
+      ["Regal Hotel", "https://maps.app.goo.gl/n4uRG5ocH3ez7sU97"],
+      ["Dorey Homestay", "https://maps.app.goo.gl/qaMeirk67qEc5jRd6"],
+      ["Double D.D Homestay", "https://maps.app.goo.gl/tbYWVjntso7u6t6a7"],
+      ["J C Homestay", "https://maps.app.goo.gl/r7aaQ1kd3qSAC2Tr8"],
+      ["Namthung Homestay", "https://maps.app.goo.gl/z1HkHjfsRgWxagU8A"],
+      ["Lanjom Homestay", "https://maps.app.goo.gl/8rTUTAmLXJTFMNLFA"],
+      ["Sangti Tsomka River Campsite", "https://www.google.com/maps/search/Sangti+Tsomka+River+Campsite"],
+      ["Khasso Homestay", "https://maps.app.goo.gl/S8BwavneQTh9w3Vs6"],
+    ];
 
-    // Inquiry form → WhatsApp pre-fill
-    function submitInquiry(e) {
-      e.preventDefault();
-      const f = e.target;
-      const data = {
-        name: f.name.value.trim(),
-        business: f.business.value.trim(),
-        phone: f.phone.value.trim(),
-        service: f.service.value,
-        message: f.message.value.trim()
+    const webList = [
+      { name: "Merakpa Resort", url: "https://merakparesort.in/" },
+      { name: "Tenzin Nora Homestay", url: "https://www.tenzinnorahomestaydirang.online/" },
+      { name: "TP Homestay", url: "https://www.tphomestaydirang.online/" },
+      { name: "Tendol Homestay", url: "https://tendolhomestaydirang.online/" },
+      { name: "Rikya Retreat Tawang", url: "https://www.rikyaretreattawang.online/" },
+      { name: "Dee Dee Homestay", url: "https://deedeehomestay.online/" },
+      { name: "Firong Stay", url: "https://www.firongstay.online/" },
+      { name: "Tashi Tsepa Homestay", url: "https://tashitsepahomestay.online/" },
+      { name: "Dewdrop Inn Dirang", url: "https://dewdropinndirang.online/" },
+      { name: "Rivero Resort Dirang", url: "https://riveroresortdirang.com/" },
+      { name: "Namfang Sangti Riverside", url: "https://namfangsangtiriversidehomestay.in/" },
+      { name: "Dolma Homestay", url: "https://dolmahomestay.in/" },
+      { name: "Hotel Center Point", url: "https://hotelcenterpointdirang.in/" },
+      { name: "Awoo Chopa Homestay", url: "https://awoochopahomestaydirang.online/" },
+      { name: "Lotus Inn Jang", url: "https://lotusinnjang.online/" },
+      { name: "Hotel Nest Inn Dirang", url: "https://hotelnestinndirang.in/" },
+      { name: "Dirang Cozy Home Cottage", url: "https://dirangcozyhomecottage.online/" },
+      { name: "The Green Rivulet Homestay", url: "https://www.thegreenrivulethomestay.in/" },
+      { name: "Sangti Tsomka River Campsite", url: "https://sangtitsomkarivercamsite.online/" },
+      { name: "Daisy Homestay Dirang", url: "https://daisyhomestaydirang.online/" },
+    ];
+
+    function domainFromUrl(url) {
+      try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; }
+    }
+
+    // Render GBP grid
+    const gbpGrid = document.getElementById("gbpGrid");
+    gbpList.forEach(([name, url]) => {
+      const a = document.createElement("a");
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.className = "card portfolio-slide p-5 flex items-start gap-4 group fade-up";
+      a.innerHTML = `
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(6, 182, 212, 0.12);">
+          <i data-lucide="map-pin" class="w-5 h-5 text-accent-cyan" aria-hidden="true"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h4 class="font-semibold text-white group-hover:text-accent-cyan transition">${name}</h4>
+          <p class="text-xs text-slate-500 mt-1">Google Business Profile · Optimized &amp; Ranking</p>
+        </div>
+        <i data-lucide="external-link" class="w-4 h-4 text-slate-600 group-hover:text-accent-cyan transition flex-shrink-0 mt-1" aria-hidden="true"></i>
+      `;
+      gbpGrid.appendChild(a);
+    });
+
+    // Render Website grid
+    const webGrid = document.getElementById("webGrid");
+    const gradients = [
+      "linear-gradient(135deg, #0ea5e9, #3b82f6)",
+      "linear-gradient(135deg, #8b5cf6, #ec4899)",
+      "linear-gradient(135deg, #06b6d4, #0ea5e9)",
+      "linear-gradient(135deg, #f59e0b, #ef4444)",
+      "linear-gradient(135deg, #10b981, #06b6d4)",
+      "linear-gradient(135deg, #6366f1, #8b5cf6)",
+    ];
+    webList.forEach(({ name, url }, i) => {
+      const a = document.createElement("a");
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.className = "card portfolio-slide overflow-hidden group fade-up flex flex-col";
+      const host = domainFromUrl(url);
+      a.innerHTML = `
+        <div class="p-3 border-b border-white/[0.06] flex items-center gap-1.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-400/70"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400/70"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-green-400/70"></span>
+          <span class="ml-2 text-[11px] text-slate-500 truncate">${host}</span>
+        </div>
+        <div class="relative h-36 flex items-center justify-center text-white font-display font-semibold text-base px-4 text-center" style="background: ${gradients[i % gradients.length]};">
+          <span class="relative z-10">${name}</span>
+          <div class="absolute inset-0" style="background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.25), transparent 60%);"></div>
+        </div>
+        <div class="p-4 flex items-center justify-between">
+          <div>
+            <div class="font-medium text-sm text-white">${name}</div>
+            <div class="text-xs text-slate-500">Website Design &amp; Development</div>
+          </div>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-500 group-hover:text-accent-cyan transition" aria-hidden="true"></i>
+        </div>
+      `;
+      webGrid.appendChild(a);
+    });
+
+    // Lucide icons render
+    if (window.lucide) lucide.createIcons();
+
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    function initSlider(trackId, prevId, nextId, { autoplay = false } = {}) {
+      const track = document.getElementById(trackId);
+      const prev = document.getElementById(prevId);
+      const next = document.getElementById(nextId);
+      if (!track || !prev || !next) return;
+
+      const getStep = () => {
+        const firstSlide = track.querySelector(".portfolio-slide");
+        const gap = parseFloat(getComputedStyle(track).gap || "16");
+        return firstSlide ? firstSlide.getBoundingClientRect().width + gap : track.clientWidth * 0.9;
       };
-      const text =
-        `Hi Samar, new inquiry from your website:\n\n` +
-        `👤 Name: ${data.name}\n` +
-        (data.business ? `🏢 Business: ${data.business}\n` : '') +
-        `📞 Phone: ${data.phone}\n` +
-        `🛠️ Service: ${data.service}\n` +
-        (data.message ? `\n📝 Message:\n${data.message}` : '');
-      const url = `https://wa.me/917085499570?text=${encodeURIComponent(text)}`;
-      window.open(url, '_blank', 'noopener');
-      return false;
+
+      const updateControls = () => {
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth - 2);
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= maxScroll;
+      };
+
+      const move = (direction) => {
+        track.scrollBy({ left: getStep() * direction, behavior: "smooth" });
+      };
+
+      prev.addEventListener("click", () => move(-1));
+      next.addEventListener("click", () => move(1));
+      track.addEventListener("scroll", updateControls, { passive: true });
+      window.addEventListener("resize", updateControls);
+      updateControls();
+
+      if (!autoplay || prefersReduced) return;
+
+      let autoplayTimer = null;
+      const stopAutoplay = () => {
+        if (autoplayTimer) {
+          clearInterval(autoplayTimer);
+          autoplayTimer = null;
+        }
+      };
+
+      const startAutoplay = () => {
+        stopAutoplay();
+        autoplayTimer = setInterval(() => {
+          const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth - 2);
+          if (track.scrollLeft >= maxScroll) {
+            track.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            move(1);
+          }
+        }, 4200);
+      };
+
+      track.addEventListener("mouseenter", stopAutoplay);
+      track.addEventListener("mouseleave", startAutoplay);
+      track.addEventListener("focusin", stopAutoplay);
+      track.addEventListener("focusout", startAutoplay);
+      track.addEventListener("touchstart", stopAutoplay, { passive: true });
+      track.addEventListener("touchend", startAutoplay, { passive: true });
+      startAutoplay();
     }
 
-    // Subtle fade-up on scroll
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((en) => {
-          if (en.isIntersecting) {
-            en.target.classList.add('in-view');
-            io.unobserve(en.target);
+    // Navbar scroll
+    const navbar = document.getElementById("navbar");
+    const onScroll = () => {
+      if (window.scrollY > 40) navbar.classList.add("nav-scrolled");
+      else navbar.classList.remove("nav-scrolled");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    // Mobile menu
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const setMenuState = (open) => {
+      mobileMenu.classList.toggle("hidden", !open);
+      mobileMenu.classList.toggle("flex", open);
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      document.body.classList.toggle("overflow-hidden", open);
+    };
+    menuToggle.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      setMenuState(!isOpen);
+    });
+    mobileMenu.addEventListener("click", (event) => {
+      if (event.target === mobileMenu) setMenuState(false);
+    });
+    document.querySelectorAll(".mobile-link").forEach(l => l.addEventListener("click", () => setMenuState(false)));
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1024) setMenuState(false);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setMenuState(false);
+    });
+
+    // Fade up + stat counter
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    initSlider("gbpGrid", "gbpPrev", "gbpNext", { autoplay: true });
+    initSlider("webGrid", "webPrev", "webNext", { autoplay: true });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          if (e.target.classList.contains("stat-num") && !prefersReduced) {
+            animateCount(e.target);
           }
-        });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.section, .trust-band, .hero-copy, .hero-visual').forEach(el => {
-        el.classList.add('reveal');
-        io.observe(el);
+          observer.unobserve(e.target);
+        }
       });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+    document.querySelectorAll(".stat-num").forEach(el => observer.observe(el));
+
+    function animateCount(el) {
+      const target = parseInt(el.dataset.target || "0", 10);
+      const duration = 1400;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min(1, (now - start) / duration);
+        const val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.textContent = val + "+";
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target + "+";
+      };
+      requestAnimationFrame(tick);
     }
+
+    // Form -> WhatsApp
+    const form = document.getElementById("inquiryForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      const fd = new FormData(form);
+      const name = fd.get("name") || "";
+      const business = fd.get("business") || "";
+      const phone = fd.get("phone") || "";
+      const service = fd.get("service") || "";
+      const message = fd.get("message") || "";
+      const text =
+`Hi Samar, I'd like to discuss a project.
+
+Name: ${name}
+Business: ${business}
+Phone: ${phone}
+Service Needed: ${service}
+Message: ${message}`;
+      const url = `https://wa.me/917085499570?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank", "noopener");
+    });
   </script>
 </body>
 </html>
